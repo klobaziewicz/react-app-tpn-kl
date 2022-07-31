@@ -1,0 +1,24 @@
+h4{
+    height: 9vh;
+    color: $white;
+    padding: 2.7vh;
+    background-color: $admin_blue_1;
+}
+
+.lista_zgloszen{
+    height: 81vh;
+    width: 100vw;
+    background-color: $admin_blue_3;
+}
+
+td, th, tr{
+    width: 100vw;
+    height: 8vh; 
+}
+
+th{
+    background-color: $admin_blue_2;
+}
+tr:nth-child(2n){
+    background-color: $admin_blue_4;
+}

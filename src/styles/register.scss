@@ -1,0 +1,29 @@
+label {
+    color: $white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.form3 {
+    background-color: $dark_grey;
+    height: 63vh;
+    &input[type=text],&input[type=password] {
+        width: 450px;
+        padding: 15px 0px;
+        margin: 5px 4px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px rgb(20, 28, 85) solid;
+        background: transparent;
+        transition: border-color 0.8s;
+        color: $white;
+        box-shadow: none;
+        &input[type=text]:focus,&input[type=password]:focus {
+            background: transparent;
+            border-bottom: 2px rgb(76, 92, 214) solid;
+            transition: 0.8s;
+            outline: none;
+        }
+    }
+}
