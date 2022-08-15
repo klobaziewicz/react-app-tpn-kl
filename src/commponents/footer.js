@@ -1,10 +1,10 @@
 import React from 'react';
 //import { useForm } from "react-hook-form";
-import './styles/index.scss';
-import yt from './images/yt.png'
-import tw from './images/tw.png'
-import fb from './images/fb.png'
-import ig from './images/ig.png'
+import '../styles/index.scss';
+import yt from '../images/yt.png'
+import tw from '../images/tw.png'
+import fb from '../images/fb.png'
+import ig from '../images/ig.png'
 
 function Footer() {
     return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 import { useForm } from "react-hook-form";
-import './styles/index.scss';
+import '../styles/index.scss';
 import Footer from './footer';
 import Wpis from './wpis';
 

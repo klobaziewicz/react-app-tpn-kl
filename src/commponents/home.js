@@ -1,15 +1,24 @@
-import './App.css';
+import '../App.css';
 import Login from './login';
 import Footer from './footer';
-import './styles/index.scss';
-import ph from './images/ph.png'
-import hm from './images/hm.png'
-import ml from './images/ml.png'
+import '../styles/index.scss';
+import ph from '../images/ph.png'
+import hm from '../images/hm.png'
+import ml from '../images/ml.png'
 import React from "react";
 
+function scroll() {
+    let y=window.screen.width*0.55
+    console.log(y);
+    window.scrollTo(0, y)
+}
+
 function Home() {
+
     return (
         <div className="App">
+            <div className='bgImg'></div>
+            <button onClick={() => { scroll() }} className='imgButton'>Zaloguj</button>
             <div className='header'>
                 <h1>Zaloguj się i zgłoś wyjście taternickie</h1>
             </div>
