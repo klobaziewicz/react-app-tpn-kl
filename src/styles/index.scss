@@ -41,10 +41,13 @@ h1 {
   clear: both;
   padding: 3vh;
   height: 12vh;
+  overflow-y: hidden;
+
 }
 
 h2 {
   margin: 2vh 0;
+  text-align: center;
 }
 
 .container {
@@ -55,8 +58,22 @@ h2 {
 
 @media only screen and (max-width: 750px) {
   .bgImg {
-        height: 100vh;
-        margin: 0 0 0 20vw;
+    height: 100vh;
+    margin: 0 0 0 20vw;
+  }
+
+  h2 {
+    width: 80vw;
+
+  }
+
+  .aside {
+    padding: 20vh 0;
+  }
+
+  .main {
+    width: 80vw;
+    margin: 0 0 0 20vw;
   }
 
   .footer {
@@ -79,6 +96,11 @@ h2 {
     font-size: 13px;
     width: 80vw;
     margin: 0 0 0 20vw;
+  }
+
+  .aside_icons {
+    display: flex;
+    width: 80vw;
   }
 
   .wide-list {
@@ -115,6 +137,7 @@ h2 {
   .bgImg {
     margin: 0 0 0 0;
   }
+
   .footer {
     background-color: #1D3E52;
     color: $white;
@@ -181,7 +204,6 @@ h2 {
 .main {
   background-color: $dark_grey;
   color: rgb(238, 225, 225);
-  width: 100vw;
 }
 
 .footer p {

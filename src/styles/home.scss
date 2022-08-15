@@ -23,11 +23,13 @@
         opacity: 0.7;
         background-attachment: fixed;
     }
+
     .imgButton {
         @include imgBtn;
         top: 45vh;
         left: 32vw;
     }
+
 }
 
 @media only screen and (min-width: 601px) {
@@ -40,6 +42,7 @@
         opacity: 0.7;
         background-attachment: fixed;
     }
+
     .imgButton {
         @include imgBtn;
         top: 45vh;
@@ -53,7 +56,7 @@
         top: 45vh;
         left: 33%;
     }
-    
+
 }
 
 @media only screen and (min-width: 901px) {
@@ -66,6 +69,7 @@
         opacity: 0.7;
         background-attachment: fixed;
     }
+
     .imgButton {
         @include imgBtn;
         top: 45vh;

@@ -7,19 +7,14 @@ import hm from '../images/hm.png'
 import ml from '../images/ml.png'
 import React from "react";
 
-function scroll() {
-    let y=window.screen.width*0.55
-    console.log(y);
-    window.scrollTo(0, y)
-}
-
 function Home() {
-
     return (
         <div className="App">
             <div className='bgImg'></div>
-            <button onClick={() => { scroll() }} className='imgButton'>Zaloguj</button>
-            <div className='header'>
+            <a href='#header'>
+                <button className='imgButton'>Zaloguj</button>
+            </a>
+            <div className='header' id='header'>
                 <h1>Zaloguj się i zgłoś wyjście taternickie</h1>
             </div>
             <div className="main">
