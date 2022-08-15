@@ -2,6 +2,20 @@
     background-color: $dark_grey;
 }
 
+@media only screen and (max-width: 750px) {
+    .form2, .info {
+        width: 80vw;
+        margin: 0 0 0 20vw;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    .form2, .info {
+        width: 100vw;
+    }
+}
+
+
 input[type=submit].btn2 {
     background-color: $button_dark;
     border-radius: 15px;
@@ -31,29 +45,31 @@ input[type=submit]:active {
     transform: translateY(0);
 }
 
-.info{
-    width: 100%;
+.info {
     height: 50vh;
     background-color: $light_blue;
 }
 
-.cont_info{
+.cont_info {
     margin: 2vh 2vw;
     background-color: $white;
     height: calc(100% - 4vh);
     width: calc(100% - 4vw - 20px);
 }
 
-.wpis{
+.wpis {
     border-bottom: 1px $light_grey solid;
     padding: 3vh 0 6vh 0;
-    &:last-of-type{
+
+    &:last-of-type {
         border-bottom: none;
     }
-    & h2{
+
+    & h2 {
         font-weight: 100;
     }
-    & p{
+
+    & p {
         font-size: large;
     }
 }
