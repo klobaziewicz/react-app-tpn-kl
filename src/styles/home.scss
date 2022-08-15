@@ -26,10 +26,22 @@
     .bgImg {
         @include bg_Img()
     }
+
     .imgButton {
         @include imgBtn;
         top: 45vh;
         left: 20vw;
+    }
+
+    .nav img {
+        width: 8vw;
+        height: auto;
+        filter: invert(1);
+        margin: 3vh 14vw 3vh 0vw;
+    }
+
+    ul {
+        margin: 0 0 0 -3vw;
     }
 }
 
@@ -37,15 +49,24 @@
     .bgImg {
         @include bg_Img()
     }
+
     .imgButton {
         @include imgBtn;
         top: 45vh;
         left: 27vw;
     }
+
+
+    .nav img {
+        width: 8vw;
+        height: auto;
+        filter: invert(1);
+        margin: 3vh 6vw 3vh 0;
+    }
 }
 
 @media only screen and (min-width: 501px) {
-    .bgImg {        
+    .bgImg {
         @include bg_Img()
     }
 
@@ -55,6 +76,12 @@
         left: 32vw;
     }
 
+    .nav img {
+        width: 8vw;
+        height: auto;
+        filter: invert(1);
+        margin: 3vh 6vw 3vh 0;
+    }
 }
 
 @media only screen and (min-width: 601px) {
@@ -73,6 +100,13 @@
         top: 45vh;
         left: 36%;
     }
+
+    .nav img {
+        width: 8vw;
+        height: auto;
+        filter: invert(1);
+        margin: 3vh 6vw 3vh 0;
+    }
 }
 
 @media only screen and (min-width: 751px) {
@@ -82,6 +116,12 @@
         left: 33%;
     }
 
+    .nav img {
+        width: 8vw;
+        height: auto;
+        filter: invert(1);
+        margin: 3vh 6vw 3vh 0;
+    }
 }
 
 @media only screen and (min-width: 901px) {
