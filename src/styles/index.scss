@@ -60,6 +60,7 @@ h2 {
   .bgImg {
     height: 100vh;
     margin: 0 0 0 20vw;
+    width: 80vw;
   }
 
   h2 {
@@ -127,10 +128,6 @@ h2 {
     height: auto;
     filter: invert(1);
     margin: 3vh 6vw 3vh 0;
-  }
-
-  .bgImg {
-    width: 80vw;
   }
 }
 
