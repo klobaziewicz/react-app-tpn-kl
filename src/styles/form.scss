@@ -3,10 +3,24 @@ code {
         monospace;
 }
 
+@media only screen and (max-width: 650px) {
+
+    input[type=text],
+    input[type=password] {
+        width: 65vw;
+    }
+}
+
+@media only screen and (min-width: 651px) {
+
+    input[type=text],
+    input[type=password] {
+        width: 450px;
+    }
+}
 
 input[type=text],
 input[type=password] {
-    width: 450px;
     padding: 15px 10px;
     margin: 5px 4px;
     border-top: none;
@@ -65,14 +79,15 @@ form {
     padding: 6vh 0 5vh 0;
 }
 
-.lb{
+.lb {
     margin: 0 0 4vh 0;
-    & a{
-        color: $white; 
+
+    & a {
+        color: $white;
     }
 }
 
-.container_zgł{
+.container_zgł {
     width: 100vw;
     height: 60vh;
     background-color: $dark_grey;
