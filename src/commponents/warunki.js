@@ -18,7 +18,7 @@ function Warunki() {
 
     const select_qr = async () => {
         try {
-            const response = await fetch("http://localhost:5000/select")
+            const response = await fetch("https://stormy-oasis-25600.herokuapp.com/select")
             const jsonData1 = await response.json()
             //sortuję
             let jsonData = [...jsonData1].sort((a, b) => b.id - a.id);
@@ -42,7 +42,7 @@ function Warunki() {
         setCount(count = { loaded: false, inf: a, data: {} })
         //
         try {
-            const response = await fetch("http://localhost:5000/add/?info="+a)
+            const response = await fetch("https://stormy-oasis-25600.herokuapp.com/add/?info="+a)
             const jsonData1 = await response.json()
         } catch (error) {
             console.log(error.message);

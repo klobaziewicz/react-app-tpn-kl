@@ -16,7 +16,7 @@ function Register() {
         try {
             //pobranie loginów, hasł i maili
             
-            const res = await fetch("http://localhost:5000/select_login")
+            const res = await fetch("https://stormy-oasis-25600.herokuapp.com/select_login")
             const jsonData2 = await res.json()
             console.log(jsonData2)
             let check=true
@@ -28,7 +28,7 @@ function Register() {
             }
             if(check){
                 console.log('nie powtarza się i wartości poprawne');
-                const response = await fetch("http://localhost:5000/register/?login="+a+"&password="+b+"&mail="+c)
+                const response = await fetch("https://stormy-oasis-25600.herokuapp.com/register/?login="+a+"&password="+b+"&mail="+c)
                 const jsonData1 = await response.json()
             }
             else

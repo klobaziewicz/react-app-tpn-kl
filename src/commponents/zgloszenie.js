@@ -12,7 +12,7 @@ function Zgloszenie(props) {
 
     const select_dr = async () => {
         try {
-            const response = await fetch("http://localhost:5000/select_drogi")
+            const response = await fetch("https://stormy-oasis-25600.herokuapp.com/select_drogi")
             const jsonData = await response.json()
             console.log(jsonData);
 
@@ -32,7 +32,7 @@ function Zgloszenie(props) {
         //
         try {
             //
-            const response = await fetch("http://localhost:5000/insert_zgloszenia/?login="+props.login+"&droga="+count.wybrana_droga+"&data="+a.data+"&liczba_osob="+a.liczba_osob)
+            const response = await fetch("https://stormy-oasis-25600.herokuapp.com/insert_zgloszenia/?login="+props.login+"&droga="+count.wybrana_droga+"&data="+a.data+"&liczba_osob="+a.liczba_osob)
             const jsonData1 = await response.json()
         } catch (error) {
             console.log(error.message);

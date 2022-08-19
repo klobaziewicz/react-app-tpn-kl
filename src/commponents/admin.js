@@ -12,7 +12,7 @@ function Admin() {
 
     let select_zgloszenia = async () => {
         try {
-            const res = await fetch("http://localhost:5000/select_zgloszenia")
+            const res = await fetch("https://stormy-oasis-25600.herokuapp.com/select_zgloszenia")
             const jsonData = await res.json()
             setCount(count = { loaded: true, data: jsonData })
             console.log(jsonData)

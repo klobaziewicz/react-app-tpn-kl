@@ -15,7 +15,7 @@ function Login() {
     let zmiana = async (a, b) => {
         setCount(count = { log: a, passwd: b })
         try {
-            const res = await fetch("http://localhost:5000/select_login")
+            const res = await fetch("https://stormy-oasis-25600.herokuapp.com/select_login")
             const jsonData = await res.json()
             console.log(jsonData)
 
