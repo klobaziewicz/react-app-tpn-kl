@@ -4,6 +4,12 @@ code {
 }
 
 @media only screen and (max-width: 650px) {
+    .container_zgł {
+        width: 80vw;
+        height: 60vh;
+        background-color: $dark_grey;
+        display: none;
+    }
 
     input[type=text],
     input[type=password] {
@@ -16,6 +22,15 @@ code {
     input[type=text],
     input[type=password] {
         width: 450px;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    .container_zgł {
+        width: 100vw;
+        height: 60vh;
+        background-color: $dark_grey;
+        display: none;
     }
 }
 
@@ -85,11 +100,4 @@ form {
     & a {
         color: $white;
     }
-}
-
-.container_zgł {
-    width: 100vw;
-    height: 60vh;
-    background-color: $dark_grey;
-    display: none;
 }

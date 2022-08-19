@@ -10,6 +10,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 }
 app.use(cors(corsOptions))
+//process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 1;
 
 //---------- tworzenie wszystkich baz danych
 const query = `
